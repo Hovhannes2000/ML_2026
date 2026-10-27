@@ -1,0 +1,12 @@
+{
+  "Digital_Music.csv": {
+    "url": "https://mcauleylab.ucsd.edu/public_datasets/data/amazon_v2/categoryFilesSmall/Digital_Music.csv",
+    "bytes": 66111451,
+    "sha256": "a73f1504ed58fdc3533a6817b4c89fc4f722eb46dc18f94a4566a4b171439c9c"
+  },
+  "meta_Digital_Music.json.gz": {
+    "url": "https://mcauleylab.ucsd.edu/public_datasets/data/amazon_v2/metaFiles2/meta_Digital_Music.json.gz",
+    "bytes": 12414214,
+    "sha256": "c044fdd1804a4ff619764f1db47efdc28585d186392e9daf7fd42e3b6bb41559"
+  }
+}

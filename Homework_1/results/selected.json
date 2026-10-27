@@ -1,0 +1,182 @@
+{
+  "seed": 42,
+  "primary_metric": "NDCG@10",
+  "search_space": {
+    "ItemKNN": [
+      {
+        "neighbors": 40,
+        "shrinkage": 10.0
+      },
+      {
+        "neighbors": 40,
+        "shrinkage": 50.0
+      },
+      {
+        "neighbors": 100,
+        "shrinkage": 10.0
+      },
+      {
+        "neighbors": 100,
+        "shrinkage": 50.0
+      }
+    ],
+    "iALS": [
+      {
+        "factors": 24,
+        "regularization": 1.0,
+        "alpha": 20.0,
+        "iterations": 10,
+        "seed": 42
+      },
+      {
+        "factors": 24,
+        "regularization": 10.0,
+        "alpha": 20.0,
+        "iterations": 10,
+        "seed": 42
+      },
+      {
+        "factors": 48,
+        "regularization": 1.0,
+        "alpha": 20.0,
+        "iterations": 10,
+        "seed": 42
+      },
+      {
+        "factors": 48,
+        "regularization": 10.0,
+        "alpha": 20.0,
+        "iterations": 10,
+        "seed": 42
+      }
+    ],
+    "EASE": [
+      {
+        "regularization": 20.0
+      },
+      {
+        "regularization": 100.0
+      },
+      {
+        "regularization": 500.0
+      }
+    ],
+    "FM": [
+      {
+        "factors": 16,
+        "regularization": 0.0001,
+        "learning_rate": 0.05,
+        "epochs": 12,
+        "batch_size": 2048,
+        "metadata": true,
+        "seed": 42
+      },
+      {
+        "factors": 16,
+        "regularization": 0.001,
+        "learning_rate": 0.05,
+        "epochs": 12,
+        "batch_size": 2048,
+        "metadata": true,
+        "seed": 42
+      },
+      {
+        "factors": 32,
+        "regularization": 0.0001,
+        "learning_rate": 0.05,
+        "epochs": 12,
+        "batch_size": 2048,
+        "metadata": true,
+        "seed": 42
+      },
+      {
+        "factors": 32,
+        "regularization": 0.001,
+        "learning_rate": 0.05,
+        "epochs": 12,
+        "batch_size": 2048,
+        "metadata": true,
+        "seed": 42
+      }
+    ],
+    "CustomALS": [
+      {
+        "factors": 24,
+        "regularization": 1.0,
+        "alpha": 20.0,
+        "iterations": 10,
+        "seed": 42,
+        "half_life_days": 730.0
+      },
+      {
+        "factors": 24,
+        "regularization": 10.0,
+        "alpha": 20.0,
+        "iterations": 10,
+        "seed": 42,
+        "half_life_days": 730.0
+      },
+      {
+        "factors": 48,
+        "regularization": 1.0,
+        "alpha": 20.0,
+        "iterations": 10,
+        "seed": 42,
+        "half_life_days": 730.0
+      },
+      {
+        "factors": 48,
+        "regularization": 10.0,
+        "alpha": 20.0,
+        "iterations": 10,
+        "seed": 42,
+        "half_life_days": 730.0
+      }
+    ]
+  },
+  "selected": {
+    "ItemKNN": {
+      "neighbors": 100,
+      "shrinkage": 50.0
+    },
+    "iALS": {
+      "factors": 48,
+      "regularization": 1.0,
+      "alpha": 20.0,
+      "iterations": 10,
+      "seed": 42
+    },
+    "EASE": {
+      "regularization": 20.0
+    },
+    "FM": {
+      "factors": 32,
+      "regularization": 0.0001,
+      "learning_rate": 0.05,
+      "epochs": 12,
+      "batch_size": 2048,
+      "metadata": true,
+      "seed": 42
+    },
+    "CustomALS": {
+      "factors": 48,
+      "regularization": 1.0,
+      "alpha": 20.0,
+      "iterations": 10,
+      "seed": 42,
+      "half_life_days": 730.0
+    }
+  },
+  "validation_users": 2583,
+  "train_end_utc": "2015-01-01",
+  "validation_end_utc": "2016-01-01",
+  "ablations": [
+    "FM without metadata at selected FM parameters",
+    "CustomALS at selected baseline iALS parameters",
+    "Signed rating ALS without temporal decay at selected baseline iALS parameters"
+  ],
+  "python": "3.9.6",
+  "numpy": "2.0.2",
+  "pandas": "2.3.3",
+  "scipy": "1.13.1"
+}

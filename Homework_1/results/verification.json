@@ -1,0 +1,14 @@
+{
+  "notebook_valid": true,
+  "executed_code_cells": 13,
+  "error_outputs": 0,
+  "figures": 4,
+  "validation_configurations": 19,
+  "models": 5,
+  "test_users": 1711,
+  "unit_tests_passed": 8,
+  "reproduction_max_abs_metric_difference": 0.0,
+  "interactions": 112972,
+  "users": 32738,
+  "items": 6838
+}

@@ -1,0 +1,41 @@
+{
+  "raw_rows": 1584082,
+  "raw_users": 840372,
+  "raw_items": 456992,
+  "missing": {
+    "item_id": 0,
+    "user_id": 0,
+    "rating": 0,
+    "timestamp": 0
+  },
+  "exact_duplicates": 65645,
+  "invalid_rows": 0,
+  "repeated_pairs": 67531,
+  "clean_rows_before_sampling": 1516551,
+  "rows": 112972,
+  "users": 32738,
+  "items": 6838,
+  "train_rows": 103287,
+  "validation_rows": 5806,
+  "test_rows": 3879,
+  "sparsity": 0.9994953508146279,
+  "raw_metadata_rows": 74347,
+  "duplicate_selected_metadata": 76,
+  "metadata_missing": {
+    "title": 6428,
+    "artist": 6424,
+    "categories": 6837
+  },
+  "validation_source_coverage": {
+    "source_events": 323751,
+    "unknown_selected_user_events": 297322,
+    "outside_catalog_events": 255453,
+    "retained_events": 5806
+  },
+  "test_source_coverage": {
+    "source_events": 449856,
+    "unknown_selected_user_events": 423228,
+    "outside_catalog_events": 382798,
+    "retained_events": 3879
+  }
+}

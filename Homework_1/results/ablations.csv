@@ -1,0 +1,4 @@
+model,NDCG@10,Recall@10,Coverage@10,parameters
+FM_ID_only,0.008333489000293095,0.01407835297373579,0.11494589061128985,"{""batch_size"": 2048, ""epochs"": 12, ""factors"": 32, ""learning_rate"": 0.05, ""metadata"": false, ""regularization"": 0.0001, ""seed"": 42}"
+CustomALS_matched,0.019333121455602027,0.03478112474313526,0.16174319976601345,"{""alpha"": 20.0, ""factors"": 48, ""half_life_days"": 730.0, ""iterations"": 10, ""regularization"": 1.0, ""seed"": 42}"
+SignedALS_no_decay,0.01993911426305137,0.03382339069071974,0.1532611874817198,"{""alpha"": 20.0, ""factors"": 48, ""half_life_days"": Infinity, ""iterations"": 10, ""regularization"": 1.0, ""seed"": 42}"

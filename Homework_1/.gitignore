@@ -1,0 +1,17 @@
+.venv/
+data/
+raw/
+tmp/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.DS_Store
+*.pkl
+*.joblib
+*.npy
+*.npz
+*.gz
+*.zip
+*.pdf
+results/*.png
+results/validation.log
